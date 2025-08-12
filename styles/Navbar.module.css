@@ -1,0 +1,31 @@
+/* styles/Navbar.module.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.35));
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+  backdrop-filter: blur(6px);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.brand { display: flex; align-items: center; gap: 10px; }
+.logo { font-size: 20px; }
+.title { font-weight: 700; letter-spacing: -0.2px; }
+
+.nav a {
+  margin-left: 12px;
+  color: var(--fg);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+.nav a:hover {
+  background: rgba(37,99,235,0.08);
+  color: var(--primary);
+}
